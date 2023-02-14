@@ -1,9 +1,8 @@
 import uiautomator2
+from devices import dinfo
 
-
-deviceinfo = open("save/device.txt")
-info = deviceinfo.read() 
-
+info = dinfo.get()
+print(info)
 d = uiautomator2.connect(info)
 
 def nikke_rung():

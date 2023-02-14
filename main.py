@@ -3,8 +3,8 @@ from PIL import Image, ImageTk
 import pyperclip
 import os
 from pathlib import Path
+from devices import dinfo
 from modules.index import tog_rung, nikke_rung
-
 
 
 customtkinter.set_appearance_mode("system")
@@ -12,24 +12,19 @@ customtkinter.set_appearance_mode("system")
 root = customtkinter.CTk();
 root.title("Games Automator")
 root.geometry("500x450")
-root.iconbitmap('assets\icon.ico')
+root.iconbitmap(bitmap='assets\icon.ico')
 
 root.columnconfigure(0, weight = 1)
 
 #All external implementations
 
 
-dinfo = Path("save/device.txt")
-if dinfo.exists:
-    deviceinfo = open("save/device.txt")
-    info = deviceinfo.read() 
-
 Nikkelogo = customtkinter.CTkImage(light_image = Image.open(r"assets\nikke.png"), size = (40,40))
 Toglogo = customtkinter.CTkImage(light_image=Image.open(r"assets\tog.jpg"), size = (40,40)) 
 
 #function
 def cpy_id():
-    pyperclip.copy(info)
+    pyperclip.copy(dinfo.get())
 
 
 def nikke():
@@ -50,7 +45,7 @@ device.grid(sticky = "NS")
 
 device.add("Device Info")
 
-device_lbl = customtkinter.CTkLabel(master = device.tab("Device Info"), text = info)
+device_lbl = customtkinter.CTkLabel(master = device.tab("Device Info"), text = dinfo.get())
 device_lbl.grid(padx = 80, pady = 10)
 
 device_cpy = customtkinter.CTkButton(master = device.tab("Device Info"), text = "Copy ID", command = cpy_id())
