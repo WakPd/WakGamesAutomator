@@ -12,7 +12,7 @@ customtkinter.set_appearance_mode("system")
 root = customtkinter.CTk();
 root.title("Games Automator")
 root.geometry("500x450")
-
+root.iconbitmap(default="assets\icon.ico")
 root.columnconfigure(0, weight = 1)
 
 #All external implementations
@@ -85,3 +85,4 @@ tog_run.grid(padx = 50, pady = 10)
 
 tog_valid = customtkinter.CTkButton(master = Menu.tab("TOG:M Great Journey"), text = "Start", command=tog)
 tog_valid.grid(padx = 50)
+
