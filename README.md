@@ -23,7 +23,7 @@ If you have any questions, feel free to reach out to me on [Twitter](https://twi
 
 ## 🙇 Author
 #### Saurabh Chauhan
-- Twitter: [@WakP_](.https://twitter.com/WakP_)
+- Twitter: [@WakP_](https://twitter.com/WakP_)
 - Github: [@WakPd](https://github.com/WakPd)
         
         
