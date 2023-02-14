@@ -10,12 +10,12 @@ customtkinter.set_default_color_theme("dark-blue")
 devroot = customtkinter.CTk()
 devroot.geometry("500x300")
 devroot.title("Device")
-devroot.iconbitmap(bitmap='assets\icon.ico')
+devroot.iconbitmap(default="assets\icon.ico")
 
 dinfo = customtkinter.StringVar()
 def device():
-    main
     devroot.destroy()
+    os.system("python main.py")
 
 frame = customtkinter.CTkFrame(master = devroot)
 frame.pack(pady = 20, padx = 60, fill = "both", expand = True)
