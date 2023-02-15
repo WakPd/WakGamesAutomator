@@ -1,7 +1,7 @@
 
 # <p align="center">Wak Games Automator</p>
   
-A Python project to automate your actions on games.
+A Python project to automate your actions on games, now this project is not very useful, but it is under construction, many update are coming !
 
 ## 🧐 Games Supported    
 - Nikke : Goddess Of Victory
@@ -15,13 +15,12 @@ A Python project to automate your actions on games.
 ```bash
 pip install -r requirements.txt
 ```
-Then run
 
-```bash
+## 🧑🏻‍💻 Usage
+```py
 python check.py
 ```
-        
-
+ 
 ## 🛠️ Tech Stack
 - [Python](https://www.python.org/downloads/)
 - [Custom Tkinter](https://github.com/TomSchimansky/CustomTkinter/wiki)
@@ -37,4 +36,3 @@ If you have any questions, feel free to reach out to me on [Twitter](https://twi
 #### Saurabh Chauhan
 - Twitter: [@WakP_](https://twitter.com/WakP_)
 - Github: [@WakPd](https://github.com/WakPd)
-        
