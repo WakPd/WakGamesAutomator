@@ -11,7 +11,19 @@ A Python project to automate your actions on games.
 ![Image](https://i.imgur.com/fE5EJJu.png)
 
 
+## 🛠️ Install Dependencies    
+```bash
+pip install -r requirements.txt
+```
+Then run
+
+```bash
+python check.py
+```
+        
+
 ## 🛠️ Tech Stack
+- [Python](https://www.python.org/downloads/)
 - [Custom Tkinter](https://github.com/TomSchimansky/CustomTkinter/wiki)
 - [UIAutomator](https://github.com/LmeSzinc/uiautomator2)
 
@@ -25,5 +37,4 @@ If you have any questions, feel free to reach out to me on [Twitter](https://twi
 #### Saurabh Chauhan
 - Twitter: [@WakP_](https://twitter.com/WakP_)
 - Github: [@WakPd](https://github.com/WakPd)
-        
         
