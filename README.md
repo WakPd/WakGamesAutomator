@@ -33,6 +33,6 @@ A simple star to this project repo is enough to keep me motivated on this projec
 If you have any questions, feel free to reach out to me on [Twitter](https://twitter.com/WakP_) or on discord: Wak#1166.
 
 ## 🙇 Author
-#### Saurabh Chauhan
+#### Wak
 - Twitter: [@WakP_](https://twitter.com/WakP_)
 - Github: [@WakPd](https://github.com/WakPd)
