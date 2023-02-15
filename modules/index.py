@@ -1,8 +1,11 @@
 import uiautomator2
-from devices import dinfo
+from pathlib import Path
 
-info = dinfo.get()
-print(info)
+info = Path("save/device.txt")
+if info.exists:
+    deviceinfo = open("save/device.txt")
+    info = deviceinfo.read()
+
 d = uiautomator2.connect(info)
 
 def nikke_rung():

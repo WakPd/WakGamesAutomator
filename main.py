@@ -3,7 +3,6 @@ from PIL import Image, ImageTk
 import pyperclip
 import os
 from pathlib import Path
-from devices import dinfo
 from modules.index import tog_rung, nikke_rung
 
 
@@ -17,13 +16,17 @@ root.columnconfigure(0, weight = 1)
 
 #All external implementations
 
+dinfo = Path("save/device.txt")
+if dinfo.exists:
+    deviceinfo = open("save/device.txt")
+    dinfo = deviceinfo.read()
 
 Nikkelogo = customtkinter.CTkImage(light_image = Image.open(r"assets\nikke.png"), size = (40,40))
 Toglogo = customtkinter.CTkImage(light_image=Image.open(r"assets\tog.jpg"), size = (40,40)) 
 
 #function
 def cpy_id():
-    pyperclip.copy(dinfo.get())
+    pyperclip.copy(dinfo)
 
 
 def nikke():
@@ -44,7 +47,7 @@ device.grid(sticky = "NS")
 
 device.add("Device Info")
 
-device_lbl = customtkinter.CTkLabel(master = device.tab("Device Info"), text = dinfo.get())
+device_lbl = customtkinter.CTkLabel(master = device.tab("Device Info"), text = dinfo)
 device_lbl.grid(padx = 80, pady = 10)
 
 device_cpy = customtkinter.CTkButton(master = device.tab("Device Info"), text = "Copy ID", command = cpy_id())
@@ -86,3 +89,4 @@ tog_run.grid(padx = 50, pady = 10)
 tog_valid = customtkinter.CTkButton(master = Menu.tab("TOG:M Great Journey"), text = "Start", command=tog)
 tog_valid.grid(padx = 50)
 
+root.mainloop()
