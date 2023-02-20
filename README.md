@@ -9,7 +9,7 @@ A Python project to automate your actions on games, now this project is not very
 ##  [Nikke : Goddess Of Victory](https://github.com/WakPd/WakGamesAutomator/blob/main/modules/nikke.py)  
 ```txt
 Running the game : run the game using package 
-( if you game use more than 45s to run till the "touch to continue" screen, consider not using this)
+(if you game use more than 45s to run till the "touch to continue" screen, consider not using this)
 ```
 
         
@@ -33,6 +33,8 @@ python check.py
 - [Python](https://www.python.org/downloads/)
 - [Custom Tkinter](https://github.com/TomSchimansky/CustomTkinter/wiki)
 - [UIAutomator](https://github.com/LmeSzinc/uiautomator2)
+- [OpenCV](https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html)
+- [OCR Tesseract](https://github.com/tesseract-ocr/tesseract#installing-tesseract)
 
 
 ## ❤️ Support  
