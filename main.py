@@ -6,7 +6,6 @@ from pathlib import Path
 from modules.tog import tog_rung
 from modules.nikke import nikke_rung
 
-
 customtkinter.set_appearance_mode("system")
 
 root = customtkinter.CTk();
