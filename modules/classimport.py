@@ -2,8 +2,9 @@ import uiautomator2
 import cv2
 import pytesseract
 import os
+import time
 
-pytesseract.pytesseract.tesseract_cmd = "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+pytesseract.pytesseract.tesseract_cmd = "Tesseract-OCR\\tesseract.exe"
 
 device = uiautomator2.connect("eqcieehmnbdqs8ws")
 
@@ -32,8 +33,9 @@ class Text:
                     coord = int(data['left'][i]), int(data['top'][i]), int(data['width'][i]), int(data['height'][i])
                     CenterCoord = (coord[0]+(coord[2]/2), coord[1]+(coord[3]/2))
                     x, y = CenterCoord
+                    print(text, ' find at ', x, y)
                     device.click(x, y)
-                    os.remove('asset/temp/screen.png')
+            os.remove('assets/temp/screen.png')
 #Exemple
 # detect_to = Text()
 # detect_to.TextMatch("TO")
