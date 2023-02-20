@@ -3,7 +3,8 @@ from PIL import Image, ImageTk
 import pyperclip
 import os
 from pathlib import Path
-from modules.index import tog_rung, nikke_rung
+from modules.tog import tog_rung
+from modules.nikke import nikke_rung
 
 
 customtkinter.set_appearance_mode("system")
@@ -21,8 +22,8 @@ if dinfo.exists:
     deviceinfo = open("save/device.txt")
     dinfo = deviceinfo.read()
 
-Nikkelogo = customtkinter.CTkImage(light_image = Image.open(r"assets\nikke.png"), size = (40,40))
-Toglogo = customtkinter.CTkImage(light_image=Image.open(r"assets\tog.jpg"), size = (40,40)) 
+Nikkelogo = customtkinter.CTkImage(light_image = Image.open(r"assets\Nikke\nikke.png"), size = (40,40))
+Toglogo = customtkinter.CTkImage(light_image=Image.open(r"assets\Tog\tog.jpg"), size = (40,40)) 
 
 #function
 def cpy_id():
