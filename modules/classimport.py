@@ -3,10 +3,14 @@ import cv2
 import pytesseract
 import os
 import time
+from pathlib import Path
 
 pytesseract.pytesseract.tesseract_cmd = "Tesseract-OCR\\tesseract.exe"
-
-device = uiautomator2.connect("eqcieehmnbdqs8ws")
+info = Path("save/device.txt")
+if info.exists:
+    deviceinfo = open("save/device.txt")
+    info = deviceinfo.read()
+device = uiautomator2.connect("info")
 
 #Button Maker and matcher
 class Button:
@@ -50,12 +54,6 @@ class Text:
                     x, y = CenterCoord
                     print(text, ' find at ', x, y)
                     device.click(x, y)
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> 20fd9cc (Fix)
             os.remove('assets/temp/screen.png')
 #Exemple
 # detect_to = Text()
