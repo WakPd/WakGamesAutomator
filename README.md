@@ -8,15 +8,10 @@ A Python project to automate your actions on games, now this project is not very
 
 ##  [Nikke : Goddess Of Victory](https://github.com/WakPd/WakGamesAutomator/blob/main/modules/nikke.py)  
 ```txt
-Running the game : run the game using package 
-(if you game use more than 45s to run till the "touch to continue" screen, consider not using this)
+Running the game : run the game using package name
 ```
 
-        
- [TOG: M Great Journey](https://github.com/WakPd/WakGamesAutomator/blob/main/modules/tog.py)
-
 ![Image](https://i.imgur.com/wlRFFKe.png)
-![Image](https://i.imgur.com/fE5EJJu.png)
 
 
 ## 🛠️ Install Dependencies    
