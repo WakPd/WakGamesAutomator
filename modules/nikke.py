@@ -14,8 +14,13 @@ device = uiautomator2.connect(info)
 
 def nikke_rung():
     device.app_start("com.proximabeta.nikke", "com.shiftup.nk.MainActivity")
+<<<<<<< HEAD
     device.implicitly_wait()
     time.sleep(45)
     to_text = Text
     to_text.TextMatch('TO')
     print('Game run to the lobby screen')
+=======
+    to_text = Text
+    to_text.TextMatch('TO')
+>>>>>>> 20fd9cc (Fix)

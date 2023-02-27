@@ -20,9 +20,24 @@ class Button:
 class Text:
       @staticmethod
       def TextMatch(text):
+            
             base = device.screenshot('assets/temp/screen.png')
             img = cv2.imread(base)
 
+            test = pytesseract.image_to_data(img, output_type='dict')
+                
+            if text in test['text']:
+                print(text, ' Find')
+            else:
+                while text not in test['text']:
+                    print("0")
+                    os.remove('assets/temp/screen.png')
+                    base = device.screenshot('assets/temp/screen.png')
+                    img = cv2.imread(base)
+                    test = pytesseract.image_to_data(img, output_type='dict')
+                print(text, ' Find')
+                
+            img = cv2.imread('assets/temp/screen.png')
             data = pytesseract.image_to_data(img, output_type='dict')
 
             boxes = len(data['level'])
@@ -35,6 +50,12 @@ class Text:
                     x, y = CenterCoord
                     print(text, ' find at ', x, y)
                     device.click(x, y)
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 20fd9cc (Fix)
             os.remove('assets/temp/screen.png')
 #Exemple
 # detect_to = Text()
