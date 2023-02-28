@@ -5,12 +5,13 @@ import os
 import time
 from pathlib import Path
 
-pytesseract.pytesseract.tesseract_cmd = "Tesseract-OCR\\tesseract.exe"
+pytesseract.pytesseract.tesseract_cmd = "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+
 info = Path("save/device.txt")
 if info.exists:
     deviceinfo = open("save/device.txt")
     info = deviceinfo.read()
-device = uiautomator2.connect("info")
+device = uiautomator2.connect(info)
 
 #Button Maker and matcher
 class Button:

@@ -12,8 +12,13 @@ if info.exists:
 
 device = uiautomator2.connect(info)
 
+def lobby_text():
+    lobby_txt = Text
+    lobby_txt.TextMatch('Lobby')
+
 def nikke_rung():
     device.app_start("com.proximabeta.nikke", "com.shiftup.nk.MainActivity")
     to_text = Text
     to_text.TextMatch('TO')
-    print('Game run to the lobby screen')
+    lobby_text()
+    
