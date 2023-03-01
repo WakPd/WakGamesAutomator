@@ -19,6 +19,7 @@ class Button:
     def Match(object):
             device.image.match(object)
             device.image.click(object)
+            device.image.click(object)
 #check GitHub UIautomator for how to use
 
 #Text Dectection and text clicker
@@ -35,7 +36,6 @@ class Text:
                 print(text, ' Find')
             else:
                 while text not in test['text']:
-                    print("0")
                     os.remove('assets/temp/screen.png')
                     base = device.screenshot('assets/temp/screen.png')
                     img = cv2.imread(base)
