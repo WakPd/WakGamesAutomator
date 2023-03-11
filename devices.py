@@ -13,6 +13,9 @@ root.title("Device")
 frame = customtkinter.CTkFrame(master = root)
 frame.pack(pady = 20, padx = 60, fill = "both", expand = True)
 
+label2 = customtkinter.CTkLabel(master = frame, text = "For PC Game, type any number", text_color = "blue", font = ("Routtage", 24))
+label2.pack(pady=12, padx=10)
+
 label = customtkinter.CTkLabel(master = frame, text = "Device Info", text_color = "blue", font = ("Routtage", 24))
 label.pack(pady=12, padx=10)
 
@@ -31,10 +34,12 @@ def device():
     root.destroy()
     os.system('python main.py')
 
+def pcgame():
+    root.destroy()
+    os.system('python main.py')
 
 button = customtkinter.CTkButton(master = frame, text = "Submit", command = device)
 button.pack(pady = 12, padx = 10)
-
 
 
 

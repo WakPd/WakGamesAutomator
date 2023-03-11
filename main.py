@@ -3,7 +3,8 @@ from PIL import Image, ImageTk
 import pyperclip
 import os
 from pathlib import Path
-from modules.nikke import *
+from modules.Nikke.nikke import *
+from modules.Nikke.nikkepc import *
 
 customtkinter.set_appearance_mode("system")
 
@@ -32,6 +33,10 @@ def nikke():
         if Nikke_sale_buy._check_state is True:
             nikke_sale()
 
+def nikkepc():
+     if Nikkepc_sale_buy._check_state is True:
+        nikkepc_sale()
+
 #Menu
 Menu = customtkinter.CTkTabview(master = root, height = 300)
 Menu.grid(sticky = "NS")
@@ -48,7 +53,7 @@ device_lbl.grid(padx = 80, pady = 10)
 device_cpy = customtkinter.CTkButton(master = device.tab("Device Info"), text = "Copy ID", command = cpy_id())
 device_cpy.grid(padx = 80)
 
-#Nikke
+#Nikke Mobile
 Menu.add("Nikke")
 
 Nikke_lbl1 = customtkinter.CTkLabel(master = Menu.tab("Nikke"), text = "You choose the Game Nikke")
@@ -68,5 +73,26 @@ Nikke_sale_buy.grid(padx = 50, pady = 10)
 
 Nikke_valid = customtkinter.CTkButton(master = Menu.tab("Nikke"), text = "Start", command=nikke)
 Nikke_valid.grid(padx = 50)
+
+#Nikke PC
+Menu.add("Nikke (PC ver.)")
+
+Nikkepc_lbl1 = customtkinter.CTkLabel(master = Menu.tab("Nikke (PC ver.)"), text = "You choose the Game Nikke")
+Nikkepc_lbl1.grid(padx = 50)
+
+Nikkepc_lbldetails = customtkinter.CTkLabel(master = Menu.tab("Nikke (PC ver.)"), text = "You need to have the game runned in the lobby screen")
+Nikkepc_lbldetails.grid(padx = 50)
+
+Nikkepc_logo = customtkinter.CTkLabel(master = Menu.tab("Nikke (PC ver.)"), image = Nikkelogo, text="")
+Nikkepc_logo.grid(padx = 50)
+
+Nikkepc_lbl2 = customtkinter.CTkLabel(master = Menu.tab("Nikke (PC ver.)"), text = "Here are the differents options :")
+Nikkepc_lbl2.grid(padx = 50)
+
+Nikkepc_sale_buy = customtkinter.CTkCheckBox(master = Menu.tab("Nikke (PC ver.)"), text = "Shop 100% Sale Item", onvalue=1, offvalue=0)
+Nikkepc_sale_buy.grid(padx = 50, pady = 10)
+
+Nikkepc_valid = customtkinter.CTkButton(master = Menu.tab("Nikke (PC ver.)"), text = "Start", command=nikkepc)
+Nikkepc_valid.grid(padx = 50)
 
 root.mainloop()

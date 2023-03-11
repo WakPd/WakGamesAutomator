@@ -1,7 +1,7 @@
 import uiautomator2
 from pathlib import Path
-from modules.classimport import Button
-from modules.classimport import Text
+from modules.mobileclass import Button
+from modules.mobileclass import Text
 import time
 
 
@@ -20,6 +20,8 @@ def nikke_rung():
     device.app_start("com.proximabeta.nikke", "com.shiftup.nk.MainActivity")
     to_text = Text
     to_text.TextMatch('TO')
+    notice_txt = Text
+    notice_txt.TextMatch(' ')
     cross_img = 'assets/Nikke/cross.png'
     cross_btn = Button
     cross_btn.Match(cross_img)
