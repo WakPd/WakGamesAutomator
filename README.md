@@ -29,7 +29,7 @@ python check.py
 - [Custom Tkinter](https://github.com/TomSchimansky/CustomTkinter/wiki)
 - [UIAutomator](https://github.com/LmeSzinc/uiautomator2)
 - [OpenCV](https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html)
-- [OCR Tesseract](https://github.com/tesseract-ocr/tesseract#installing-tesseract) After installing Tesseract you will need to change the path to your tesseract.exe in [classimport.py](https://github.com/WakPd/WakGamesAutomator/blob/main/modules/classimport.py)
+- [OCR Tesseract](https://github.com/tesseract-ocr/tesseract#installing-tesseract) After installing Tesseract you will need to change the path to your tesseract.exe in [mobileclass.py](https://github.com/WakPd/WakGamesAutomator/blob/main/modules/mobileclass.py) and [pcclass.py](https://github.com/WakPd/WakGamesAutomator/blob/main/modules/pcclass.py)
 
 
 ## ❤️ Support  
