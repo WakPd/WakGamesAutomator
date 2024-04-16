@@ -39,7 +39,6 @@ If you have any questions, feel free to reach out to me on [Twitter](https://twi
 
 ## 🙇 Author
 #### Wak
-- Twitter: [@WakP_](https://twitter.com/WakP_)
 - Github: [@WakPd](https://github.com/WakPd)
 
 # Hi Legends 👋
